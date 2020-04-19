@@ -1,0 +1,13 @@
+def average(arr):
+    ls1 = []
+    for i in arr:
+        if i not in ls1:
+            ls1.append(i)
+    return (sum(ls1)/len(ls1))
+
+    
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
