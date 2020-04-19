@@ -1,0 +1,13 @@
+n = int(input())
+ls = []
+sub_ls = []
+for i in range(n):
+    name = input()
+    num = eval(input())
+    dic = (name, num)
+    sub_ls.append(num)
+    ls.append(dic)
+sub_ls.sort()
+for i in ls:
+    if i[1] == sub_ls[1]:
+        print(i[0])
