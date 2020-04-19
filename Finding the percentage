@@ -1,0 +1,8 @@
+n = int(input())
+dct = {}
+for i in range(n):
+    name, *marks = input().split()
+    dct[name] = marks
+query_name = input()
+tt = dct[query_name]
+print('%.2f'%(sum(map(eval, tt))/len(tt)))
