@@ -1,0 +1,4 @@
+n = int(input())
+ls = list(set(map(eval,input().split())))
+ls.sort()
+print(ls[-2])
