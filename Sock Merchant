@@ -1,0 +1,13 @@
+ran_ge = int(input())
+numbers = list(map(int, input().split()))
+set_numbers = set(numbers)
+max_count = 0
+
+for i in set_numbers:
+    count = 0
+    z = numbers.count(i)
+    if z % 2 == 0:
+        max_count += z // 2
+    else:
+        max_count += z // 2
+print(max_count)
