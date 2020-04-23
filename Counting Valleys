@@ -1,0 +1,15 @@
+ran_ge = int(input())
+string = input()
+
+s = 0
+res = 0
+
+for i in string:
+    if i == 'U':
+        s += 1
+        if s == 0:
+            res += 1
+    if i == 'D':
+        s -= 1
+        
+print((res))
